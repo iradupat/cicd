@@ -1,17 +1,14 @@
 version: 2.1
-
 jobs:
   run_tests:
     steps:
       - checkout
       - run: 
           name : Install dependencies 
-          command: | 
-            npm install
+          command: npm install
       - run:
           name: Run unit tests
-          command: |
-            npm test
+          command: npm test
 workflows:
   build_test:
     jobs:
