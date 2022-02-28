@@ -4,7 +4,7 @@
   "description": "ramp-up project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "nodemon server.js"
   },
   "author": "Patrick",
@@ -12,9 +12,10 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "express": "^4.17.2",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
     "pg": "^8.7.1",
     "socket.io": "^4.4.1",
-    "socket.io-client": "^4.4.1",
-    "nodemon": "^2.0.15"
+    "socket.io-client": "^4.4.1"
   }
 }
