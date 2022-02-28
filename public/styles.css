@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.main{
+    /* min-width: 90vh; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#navBar{
+    flex-grow: 1;
+    width: 100%;
+    background-color: rgb(73, 111, 236);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navBar p{
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+#navBar h4{
+padding-left: 10px;    
+}
+
+
+
+.content{
+   
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 9;
+    width: 100%;
+   
+}
+
+#loginPage{
+    display: flex;
+}
+
+#chatroomPage{
+    display: none;
+    overflow-y: scroll;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+}
+
+.inputText{
+    margin: 10px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+
+}
+
+#loginButton{
+    margin: 10px;
+    background-color: rgb(73, 111, 236);
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+#screen{
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    
+}
+#msgform{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    
+
+}
+
+#msgform textarea{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    background-color: rgb(200, 212, 252);
+    border: none;
+    width: 40%;
+}
+
+#msgform button{
+    width: 40%;
+    height: 40px;
+    background-color: rgb(73, 111, 236);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.messageCard{
+    background-color: rgb(230, 235, 230);
+    width: 40%;
+    padding: 9px;
+    margin: 5px;
+    font-size: 14px;
+
+}
+
+.messageAuthor{
+    font-size: 18px;
+    color: gray;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.messageHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* medi queries */
+
+
+/* tablets */
+@media (max-width: 768px)  and (min-width : 480px){
+    #loginForm{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+
+    }
+    #msgform{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        
+    }
+    .messageCard{
+        /* background-color: green; */
+        width: 88%;
+    }
+
+    #msgform textarea{
+        width: 90%;
+    }
+    
+    #msgform button{
+        width: 90%;
+    }
+  }
+
+/* mobile */
+@media (max-width: 480px) {
+    #loginForm{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    #msgform{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+    
+    }
+    .messageCard{
+        /* background-color: green; */
+        width: 88%;
+    }
+
+    #msgform textarea{
+        width: 90%;
+    }
+    
+    #msgform button{
+        width: 90%;
+    }
+    
+  }
+
