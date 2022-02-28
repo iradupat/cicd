@@ -2,7 +2,10 @@ version: 2.1
 
 jobs:
   run_tests:
+    docker:
+      - image: circleci/node:10 
     - steps:
+      - checkout
       - run: 
           name : Install dependencies 
           command: | 
