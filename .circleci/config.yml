@@ -1,6 +1,6 @@
 version: 2.1
 
-jorbs:
+jobs:
   run_tests:
     - steps:
       - run:
